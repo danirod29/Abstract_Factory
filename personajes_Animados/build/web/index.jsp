@@ -17,7 +17,7 @@
     <body>
         <!-- formulario personaje--->
         <form>
-            <h1>Nombre del Video-juego</h1>
+            <h1><center> R E A L I S M </center></h1>
         </form>
         
         <form action="listaPersonajes.jsp" method="get">

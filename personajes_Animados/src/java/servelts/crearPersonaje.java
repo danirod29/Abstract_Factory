@@ -77,16 +77,77 @@ public class crearPersonaje extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet crearPersonaje</title>"); 
-            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/estilos_2.css\">");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/estilos_3.css\">");
             out.println("</head>");
             out.println("<body>");
             out.println("<form>");
             out.println("<h1>" + nombre + "</1>");
+            
+            
+            out.println("<table >");
+            
+            out.println("<tr >");
+            
+            out.println("<td >");
             out.println("<img src="+miPersona.asigImagen()+" width=\"330px\" height=\"540px\" posi=\"center\">");
-            //out.println("<h3>" + miPersona.asigImagen() + "</h3>");
-            out.println("<h3>Descripcion arma : " + miArma.asignarArma() + "</h3>");
-            out.println("<h3>" + misHabilidades.asigHabilidades() + "</h3>");
-            out.println("<h3>Descripcion armadura :" + miArmadura.asigArmadura() + "</h3>");
+            out.println("</td >");
+           
+            
+            
+            
+            out.println("<td>");
+            out.println("<table >");
+            
+            out.println("<tr >");
+            
+            
+            out.println("<td >");
+            out.println("<img src="+miArma.asigImagen()+" width=\"40px\" height=\"40px\" posi=\"center\">");
+            out.println("</td >");
+            
+            out.println("<td >");
+            out.println("<h2>Arma : " + miArma.asignarArma() + "</h2>");
+            out.println("</td >");
+            
+            out.println("</tr >");
+            
+            
+             out.println("<tr >");
+            
+            
+            out.println("<td >");
+            out.println("<img src="+miArmadura.asigImagen()+" width=\"40px\" height=\"40px\" posi=\"center\">");
+            out.println("</td >");
+            
+            out.println("<td >");
+            out.println("<h2>Armadura : " + miArmadura.asigArmadura() + "</h2>");
+            out.println("</td >");
+            
+            out.println("</tr >");        
+            
+   //
+             out.println("<tr >");
+            
+            
+            out.println("<td >");
+            out.println("<img src="+misHabilidades.asigImagen()+" width=\"40px\" height=\"40px\" posi=\"center\">");
+            out.println("</td >");
+            
+            out.println("<td >");
+            out.println("<h2> " + misHabilidades.asigHabilidades() + "</h2>");
+            out.println("</td >");
+            
+            out.println("</tr >");        
+            
+            
+            out.println("</table >");
+            out.println("</td >");
+            out.println("</tr >");
+            
+            out.println("</table >");
+            
+            
+            
             
             out.println("</form>");
             out.println("</body>");
